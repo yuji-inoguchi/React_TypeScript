@@ -6,22 +6,23 @@ import { Page404 } from "../components/pages/Page404";
 export const homeRoutes = [
   {
     path: "/",
-    exact: "true",
+    exact: true,
     children: <Home />
   },
+
   {
     path: "/user_management",
-    exact: "false",
+    exact: false,
     children: <UserManagement />
   },
   {
     path: "/setting",
-    exact: "fakse",
+    exact: false,
     children: <Setting />
   },
   {
     path: "*",
-    exact: "false",
+    exact: false,
     children: <Page404 />
   }
 ];
